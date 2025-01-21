@@ -1,0 +1,10 @@
+name: "Run dummy docker action"
+description: "Dummy Dcoker action"
+inputs:
+  name:
+    description: "Give me a name"
+    required: false
+    default: "Ash"
+runs:
+  using: "docker"
+  image: "Dockerfile"

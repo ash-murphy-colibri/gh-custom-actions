@@ -67,4 +67,6 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Run custom action
-        uses: ./.github/actions/deploy-s3-javascript
+        with:
+          name: "Isabelle"
+        uses: ./.github/actions/deploy-s3-docker
